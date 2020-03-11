@@ -1,0 +1,14 @@
+.section--formula {
+	grid: auto-flow / minmax(300px, 2fr) minmax(300px, 650px) 1fr;
+	grid-column-gap: 2em;
+
+	&__image {
+		grid-column: 1 / 2;
+		margin-left: .5em;
+
+	}
+	&__text-box {
+		grid-column: 2 / 3;
+		align-self: centered;
+	}
+}

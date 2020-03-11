@@ -1,0 +1,42 @@
+
+.logo {
+	width: 300px;
+	margin: 0 auto 2em;
+	display: block;
+	margin-bottom: 2em;
+}
+
+.section--intro {
+	background: {
+		image: url(../images/intro.jpg);
+		size: cover;
+		repeat: no-repeat;
+	}
+	
+	padding: 10vh 0;
+	text-align: center;
+	color: $clr-blue-light;
+
+	.logo {
+		grid-column: 2 / 3;
+	}
+}
+
+
+.intro__text {
+	grid-column: 2 / 3;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		height: 2px;
+		background-color: black;
+		opacity: .3;
+		width: 100px;
+		position: absolute;
+		top: -2em;
+		left: 46%;
+		transform: translateX(-50%);
+	}
+}
